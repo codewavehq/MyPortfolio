@@ -131,25 +131,38 @@ section {
     gap: 10px; /* إضافة مسافة بين الكروت */
 }
 .project-card {
-    position: relative;
-    padding: 20px;
-    border: 4px dashed #92E3A9;
-    margin: 15px;
-    max-width: 400px;
-    max-height: 850px;
-    text-align: center;
+  position: relative;
+  width: 300px;
+  padding: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 
 .project-card img {
-    width: 100%; /* اجعل الصورة تأخذ عرض الكرت بالكامل */
-    max-width: 300px; /* الحد الأقصى لعرض الصورة */
-    height: auto; /* اجعل الارتفاع يتناسب مع العرض للحفاظ على النسبة */
-    border-radius: 10px; /* زوايا مستديرة للصورة */
-    object-fit: cover; /* تأكد من أن الصورة تغطي المساحة المحددة بشكل جيد */
-    margin: 60px auto; /* محاذاة الصورة في المنتصف */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
+.project-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4b7bec;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #3867d6;
+}
 
 .project-card-link
 {
