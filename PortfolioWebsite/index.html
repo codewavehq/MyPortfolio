@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <header data-aos="fade-down">
+        <h3>Website</h3>
+        <nav>
+            <ul>
+                <li><a class="home-header" href="#Home">Home</a></li>
+                <li><a  href="#Projects">Projects</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a class="home-header-about" href="#About">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Home" class="home-section">
+        <div class="Home-text" data-aos="fade-right">
+            <h2>My name is Al-Mounther Al-Tumi,</h2>
+            <h2>I'm a <span>Web Developer, </span>&</h2>
+            <h2>I'm a Software Engineer.</h2>
+        </div>
+        <img data-aos="fade-left" class="Home-image" src="/images/Home-Image.jpg" alt="Profile Image">
+    </section>
+
+
+        <h2 class="projects-section-heading">My Recent <span>Projects </span></h2>
+
+        <section id="Projects">
+        
+            <div class="project-card" data-aos="fade-right" >
+                <h3 class="project-card-title">Calculator</h3>
+                <p class="project-card-description">A simple and stylish calculator web app built with HTML, CSS, and JavaScript. <span> Perform basic operations </span> like +, −, ×, ÷, %, and  more! .</p>
+                <img class="project-card-image" src="/images/projects_Images/calculator-website-image.png" alt="Project Image">
+                <a class="project-card-link"  href="https://github.com/codewavehq/calculator" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-once="false" >
+                <h3 class="project-card-title">Bookmark Website</h3>
+                <p class="project-card-description">A lightweight web app to save and manage your favorite links using <span> localStorage </span>. Fast, clean, and private – no backend required ⚡🗂️🌐 .</p>
+                <img class="project-card-image" src="/images/projects_Images/BookMark_website_image.png" alt="Project Image">
+                <a class="project-card-link" href="https://github.com/codewavehq/bookmark-website" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+
+        
+
+            <div class="project-card" data-aos="fade-left" data-aos-once="false" >
+                <h3 class="project-card-title"> Password Creator </h3>
+                <p class="project-card-description">A fast & <span>easy-to-use </span> web app that generates 💪 strong, 🔀 random passwords to keep your accounts 🔒 safe. Customize 🔧 and copy 📋 in one click! </p>
+                <img class="project-card-image" src="/images/projects_Images/Screenshot 2025-04-18 125109.png" alt="Project Image">
+                <a class="project-card-link" href="https://github.com/codewavehq/Password-Creator" target="_blank" rel="noopener noreferrer"> View Project</a>
+            </div>
+        </section>
+
+
+                <h2 class="skills-section-heading">My <span>  Skills </span></h2>
+
+                <section id="Skills">
+                    
+                        <div data-aos="fade-right" > 
+                            <img alt="Html Icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAD60lEQVRoQ+1ZWchNURT+f6LwYMiQ8Q3JPJZEpsyRUPKLXzxIFMoQRTyYhxRJQqa8IPMcRURm4oEnZMyYyMz31X+0rf+cs9a+91ynW3fV7u5h7W+t7+y1x1tclOdSnOf+FxUIpD2ChRHIhxHYDyeHp+ToAc22JYQ2AmRySgQ2abYtBBYBZEFKBBbD7sI42xYCUwCwISUCUzXbFgIjALI3JQKjNNsWAt0Bcj4lAj1g90K2IdQUAA9CQK6g7ktCxKoAp0sIVjPUPcyWQHUAvA8B6YC6mwkR6AicayFYNVD3IVsC7P8NqZIAGojyiYQIDAbOEYH1HeXKGr5lDhDjMVJjATYe5R2aAWP7JOhtFrpPUG6i9bcSuAqgTgJsFsqrnLreyHPSZSLd0Kmv6EibYfPiHzUrgaPoNUgYoPMkEchsZJZn4n1EH9ocouFZCWwF0AQBxvBhGAXCduolJcSaqIFZCSwF0FwBxgnMiRwIv9ZhzaBHO23O0/StBKYDaK0Au4Eyl79AWiKT6ZGjM/pWFfi0uS4pAmMAtFuAPUW5kWbA2P4MevWFLm3u0fpbR6APgM4IMNM6rTmAdvrws+zXVafNs1p/K4FWALobAlYLde80I0p7XbS/DNGhzXsatpVAHQC9CgErQR2H30c+QZlrfCCtkbkTAkCbrzVgK4GoYdbww9ovoZIbVyD9kDkpFH+jXBGJv7FiJUCQF0j1BBrPL9edutHIN1ds7kP7SEdnHPLbRZ/nKDfQnGe7DwEOM4fbFe6+K52KbciXKobXo32aoxO2g99Ge7ukCZwGoDyvrEDdHMcQjxJ0KE7mo3GJo7AG+RmiwymU+ydNYBcAOWld2YICT5KBjEVmZ4xhXoAYZgcdHe4vXPNdkceUSEifEFoNlJkC6RDKw0Qdd9ReSDxmDEDiRDyGdBzpHNJXoc+1nvquyINiIgQYKssEklxRYj5+ZNN9tLQQrXJuJUKgFCicpK48QoFXy7eZeI4+XOt55+W11RWuTHGh+FfXJ4QYEgwFKQwRHuy4lnPyXUT6EUGI11K+cnCCMrWN0GPoyb0hVNWHQPsyR7WP/RkKjGuuWryU0GluVnSqJxJfIDThEsqlVBUfAjx58p76P4SbGDczVXwI8EvydSLXYj5G0BEfAtTnyZNvNbmUNwCvbTXgS4DvpDzHcALWtBox6vHj8JrKd1j+J2ESXwIBaAVkuiLxQYqpjclaeaVbqOJE5+p2GemXL06mBKSdhqjgpZ5PL7xJVYtw5CPqebOjw3TcNFHjSCVFQNpgiHHfGIrEowOdZXjIa6nvBy+nnysCWTtmBSgQsH6pXOkVRiBXX9aKm/cj8AcNBJkx2dsPKAAAAABJRU5ErkJggg=="/>
+                            <p>HTML</p>
+                        </div>
+
+                        <div data-aos="fade-left" >
+
+                            <img alt="Css Icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAD0UlEQVRoQ+1YaagOURi+V1EKPyyJkn8SyhJ+IdcuW0pZs4S67i1cIgkRJdmyJ0vXFpF930v8spYtiR9EshV+KLI8T83U6W1m3vfcma/pq++t03fOd57zPO8zZ2bOOVNeVuRRXuT5l5UM5D2DpRkohhmYgyRH55ToCehuTtK23EIrQLAsJwPUXp7WQBUItuVkgNo70hoYA4JjORmg9vG0BnqD4FZOBqh9O62BdiB4kZMBar9Ma6AJCL5FkDzAfz8yMtYYPN0iuKidqGF5C5H3F0p9IdAf7RsZGRgAnquC6zfaDTR+q4E3IGojyMaifVQTMPZPBO6gwFKzrTbeauAuiLoLsmq0t2sCxv55wK0XWGr21MZbDZwD0TBBtifiqml6Yf9bVF454DWoLxSDz6I9UiO0GtgLomkamUe/XGH3YexkMZ6a0zVOq4HVIFqkkXn0VwK708FfQn2wGE/NxRqn1cBcEG3UyDz6RwF7xsE/RL2LGE/NTRqn1cA4EB3WyND/DOWTATcLmOcO7h3qrcW48Wgf0bisBvjOv6aRoX8mym4DzoUwhz8oMhfTOmM10AkCjw2JLQVmlQHnQlqg8TFiDDWfalxWA3Eikp/rAtcHn4i7ONT8rBFZDZDnn0aG/icoidvfIKmtDlc/1K9HcJtyM4EC8g/4bWkwoUHuANDLAU1A/ZAYRK1WGhH7fQw8Ar6zIH2NNlfVMDqgwqlPCr5Z+IYJowaVDWIAtbpmbeAKCAcKUrmi7kL/DEWY6wn3PmFEbSOoJRe2SFqfGTgAhkmCZQvas53/VqK+RDGwAP3rHEwt6lPEGGrJrUVqAxSdL1h477qmuMVOWnx+op+faC47PBdQHyp4qUWjavjMAHeLnG43mMgQ8V9DtCuC/8PEmCTLTRQejtzgyU7e79Raq2YPgI8BTnOtIL2Hdg+LUALmPfrkG4da+y28PgZ4pS8K0i9oT0XheaEuwVMeT14y+ADzQVbDxwAP3fdjGHlv80x7GuUUytcYHM+4fVB4MVg6xuCoxR2qGj4GOM2cbktwseJ2+WQAZrJ8Hvqi8BnRglpczNTwMUDsX5UxG0A90Fi2Ll4PMVPjPd80mxxjWajR3KrhMwPk5CGkvZW8jjhqcEtiCl8Dg8DKxYpHwmYmBTuIW2c+N1wI5UeuWBZfAyERx/H9PxyFn1u4EPly8R7nW+18ULimmO57142vaNyV4DZ7RGCGnwkbxQC/43++38OkLefnxDnMyoArwm+o3EpwZjhD3DqECfNTOb95ZhaFMJBZchaikgHLVSokpjQDhby6Fu6in4H/rdSZMaM2BvMAAAAASUVORK5CYII="/>
+                           <p> CSS</p>
+                            
+                        </div>
+                        <div data-aos="fade-right">
+                            <img alt="JavaScript Icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACjklEQVRoQ+2ZT4iPQRjHd28rW8vKae3BQZS9WMXBwYWidlNyUDhQm9TigFgpNxHK2vwtkVBy4kJqb0rYWge0tWgP8m8jUXLj861562kab73bvL/3/bUz9W2emdmZ+X6f53lnZndbW5q8tDY5/5YkoOoIpgjUOQJ/qybn7R/MlrwUSgIiRzBFILJDCy+XIlDYZZEnpAhEdmjh5VIECrss8oQUgcgOLbxcikBhl0WekCJQ1KFXmPDZTVpFvdFb4A/t++ARmAJzwW7Q/5+NGh6BXoiMOzJ7qc8bYhPY68GHANm19N0Ci7yx2gj4CbFl4FNOSFcyNla1gBUQeOlIDFKPOPsy9R5D7iy2CD8Ep8ACcBgcqquAnRC74citoX5iiJ7GHgDzAtFpeArZCOyD0LAjpQ/1qrO7qN+Ctpx0yoYqFWA/4usw2mUI64Q6BtaBOTlCaiNAHJeDNx7ZdtoSqtyfX7cU8o/RKefxdwGinfTdBhu8sVpFION2HOMM+B0Q8pg+3RW1+AbsMepz1b1wAZwEsrOib+NZlQJ62Py1I6Bz/2LAy7brGw09I56aTvvXwVJT6CObfgE6OrPSjZE9FfZjn3MD36kPgCXgqCfqDu1tpu8HdodrlybgEhscAbpBR8Fi8BysNkR0QR0EyuvtYNqN6cSRCF1cSp+tQDeyykLw1axRioAHbLDJ86IeYf4j7RV9Ojr1iFNu//LmhJon6BwqW4DWl9fu5hDawdhNM/4Ce3NApF2ij8Y9YG/oUiKQbapHmJ4H7w0LnefKdT/P9SP6XUCirgGlm8pSoCe4xG0JOKRUAdl+ytlJ5zm9MGOWhgiISdhfa/YJKNOb0dZO/2aN5soZLpQiMEPHRZvW9BH4B6JlhjHEbs2fAAAAAElFTkSuQmCC"/>
+
+                        <p>JavaScript</p>
+                           
+                        </div>
+                        <div data-aos="fade-left">
+
+                            <img alt="Keyboard Icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABRklEQVRoQ+1ZSwoCMQx1jiCiqIhncOldXLhQ8E4i4sKj6NqNN/ADInoFfREGShSKTYqtk4GgdqavL++1QWNRy/wqMudfswR+7aA5YA4IFbAtJBRQPP3vHGhDkgViiGiI5dEFuAFui5giriW06wCR3yHoNeXrAHIDxJ1Iugms8XmUMnOH2xzvZzyBMwY6mSRALvR5Ag8PeX7g+fOx73N6r/XcRS0BJpG2Q+ZAauf76zNgCSgrUD0HYtd5H75VIZ9Cse+bA8pFRAxXvSoklkwZwBzQbgj4vs6Lq9BHAMVtYQkEKZCSAyeQ6SoSiglFXHv8N/EKA+OYqypiL4E14Qk0MbBHtBQXigF1BCg1tqhT9/YXE22hsrVYj7G6AJMIbxDU0LqUONq1XMAvbKolEKab3ixzQE/LMCRzIEw3vVnmgJ6WYUjZO/AE7LtOMWRmJ7AAAAAASUVORK5CYII="/>
+                        <p id="keyboard-par">Speed</p>
+                            
+                        </div>
+                    
+                </section>
+                        <section id="Contact">
+                            <img class="form-image" src="/images/20824309_6342523.jpg" alt="About Image">
+
+                            <h2> Contact <span> me </span></h2>
+                       <!-- modify this form HTML and place wherever you want your form -->
+                        <form
+                        action="https://formspree.io/f/xdkeqeyl"
+                        method="POST"
+                        >
+
+                        <label for="name">Your name:</label>
+                        <input type="text" id="name">
+
+                        <label>
+                        Your email:
+                        <input type="email" name="email">
+                        </label>
+                        <label>
+                        Your message:
+                        <textarea name="message"></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button id="submit" type="submit">Send</button>
+                        </form>
+                        
+                        </section>
+
+                                <section id="About">
+                                    <h2 class="about-text-title">About</h2>
+                                    <div class="Home-text">
+                                        <p>
+                                          Hi! I'm <span>AlMounther AlTumi</span>, a passionate front-end developer with a solid foundation in HTML, CSS, and JavaScript. I'm constantly learning and building real-world projects that combine clean design with strong functionality.
+                                          <br><br>
+                                          Currently, I'm working on a personal website to help people stay consistent with their workouts and build better habits. I believe that great user experiences come from simplicity, clarity, and purpose.
+                                          <br><br>
+                                          My goal is to grow as a developer, expand my skillset, and leave a meaningful impact through every line of code I write.
+                                        </p>
+                                </section>
+
+    <footer>
+        <p>&copy; 2025 <span> Al-Mounther Al-Tumi </span>. All rights reserved.</p>
+        <p>Follow me on <span> social media</span></p>
+        <ul>
+            <!--<li><a href="#"><img class="social-media-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABdUlEQVRIS2NkGCDAOED2Mgwqi3WAoSBC5ZB4DTTvKrKZ6D5WAErep7KlIOP+A7EsED+FmY1usQNQYj8NLAYZ6QjEB0ix+ApQsTIQc1LoIJIsDgFathaIuYF4BxDbUGA50RY/B1oihWRREpA9lx4W/wVaIgTEn6CWdQPpEnpYDLLjGBD3A7EtEOdRYClZiYtC++DaiY5jkI4AIP4I1ZoP5S9BimszINsPGiqHgfQraOg0AWkHNBeTZLEoUPMbqAFTgHQ2ELcCcQ1UDFTK3Qbin2iWsAD5l4FYA0mcqhbDzNUFMl4AMahohIFMIGMaLS1eD40CUC4whPoUZJ8pEJ+ilcV8QINhaQBkRwsQ10ItA5XNj2hlMagovYNk+GQgG5btQDUcctCTFMdiSJqxJS41oPxNJIunA9lZUP6oxaNBjZQ0IMXcoGmBoLiMAg7eOJYHGgxq7FG72fsPaCbI7Ccwh2OzgBbNW1CtdQ05tKjtM6JjYuRZDABRqIAfYpEuzQAAAABJRU5ErkJggg==" alt="Linked In Icon" /></a></li> -->
+            <li><a href="https://github.com/codewavehq"><img class="social-media-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAC2ElEQVRIS+WWWYhPURzHZ4jiQWQZu6EITSb7kkcPlhIpL7I2pvEiQzwoNaKUJUlRhD8ppZCUePZgz04peyhESnbx+U73TGd+c87933tf5sGvPt1zzv39zvfs51RWtJNVtpNuRV7hDjR0EgyDfqD4t/AcrsCfrB3JKjyECjfCAugZqfwT5adgGzwt14Bywp2pYBNsAKWz2G+ctsNm+BkLSBPWUJ6D8VnUAj7XKZsHb0LxMeFqnC9D34KiLkyi0+CFrSck3AOnqzA8cX7CV35aUFnsJU7fYUTi/IjvVPjsB4eESzgs9Zxmkb4A42AHqGEX4Ufi04nvDNB8rgUN8XS45NVxkHR9mvBkfmpb+KaePsvSVc9HU6Rt5uwviRp46Apsj4/zY5ERUU9v5RQejf8DE3OIfF1IuCOFH6C7F/Auaen7nMLdkt4N8OK00Fryfo8n8EPz49tqMntzijr3lSQOmFiNhBZbqyNTe+6McSwyv66K/iRem/rmktfZ0EpY46/V55uC/UWSp/NdcP4aG0F/qEPCtQTezaPm+Q4k/crErie/0/Z4PgWnjeMK8kcKCmtYz5rYZeSPWuGRFDRPvGfnSc8pKKxOqDO+TSRzwworr+1krz2dYsdyii9xPfPivpDWVm2+s+0Bso+yVfAL7oC2mOwwNIGdM9ueagp0HUrYWomC5a7QCo/ihzvWGknfBG0xjYKOPQ3Tbjhhap1JfivolIvdeGP4dy8mrPJdoMNepsO+F5wE9xAYS/q2EZZP2um2h/9r/JhQ67T/dBdrK+lW0u3UGxbDN9hvRF1Wh4X2vTU1UneyYlssNiyD8bgGVdAAOvo01Gmmd9ZQ46DzeQq0WRtpTx+Jq8ead63IxzAI+kTU9QDQf2f3ScwOicqh3GOvKz5NsA70tP0IsVemG2rtCD0YtoBeIkErJ+yC1BMNuZ5DCyN1lSiXuLakvRzahGQVjjW8cPn/J/wPhPR9H5IUeEAAAAAASUVORK5CYII=" alt="GitHub Icon" /></a></li>
+
+           <!--<li><a href="#"><img class="social-media-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB/UlEQVRIS+2VSyhFURSGiZHII+UReZQByUCkKIVMkFISpYiZSBIGBgykPJKJiZKJKMIEQ0qYSMnYiLwKkeSV8i3tW9fpHHvfe0/uxK6vfe9Za69/r7X3WSc0JEgjNEi6If/Cf1Z5N0qdym7boAei4QUmYQyeVSZJar7yZGYVjsAwB63wZpB+Jj77kGjje8GzJciFBCiCDyfhOgxrsAs18KQRP8ReoPG5w16mqrHnJNyNYVoZT5kb4cghsATbNqjKucpYktpyEm7CsOgV7JPfQ2oznvPymOX5sIHwPT4tsOHtaz3jeIzXEGYJ+Mr/VbWpY+ZLGIQRA+EJfPqtfna3ehynPk3AR+wPkGYgLBsc1Qk341AI5SC30Y0hr9q8TrgYB3k93BwlBDvQCYtdbnG+S8pyIaWpyCX9MezOOAePTUh3QXyFGA12cZxaZizOA9ABUQFsQO7Kji/CnThL75WW6O+QI3Psak4ZZ7PoBML9VWVdBTh2tt++TpUsXIYYP8SnWNP72zrdZ1HOugtKVQYme5APjGz6PRBh2ZiUbBYyDFQX8GnXiUoc74zj+J+ngkcyV0MtJBsISguV1jhj4PvtYi11Pc+kr2YZBpAPu9wDOc8bwzW2wp618v5VqfKmqFnO+1ZxxrwO0iAkW5+H7nL5HNB0wb+waaUC9gtaqb8AQMVNHyFXXXwAAAAASUVORK5CYII=" alt="Twitter Icon"/></a></li>--> 
+        </ul>
+    </footer>
+    
+    <script src="./Code/main.js"></script>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

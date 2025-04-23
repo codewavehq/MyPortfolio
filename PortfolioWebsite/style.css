@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+    
+}
+
+:root {
+    --color: #92E3A9;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    color: #000;
+}
+
+header {
+      
+    color: var(--color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 1px rgba(97, 228, 85, 0.3); /* Increase shadow on hover */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+header:hover
+{
+    box-shadow: 1px 1px 20px 1px rgba(97, 228, 85, 0.3); /* Increase shadow on hover */
+}
+header h3 {
+    color: var(--color);
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: var(--color);
+    text-decoration: none;
+    position: relative; /* Required for positioning the ::after element */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position the underline just below the text */
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #72f140; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth transition for the underline width */
+}
+
+header nav ul li a:hover {
+    color: #72f140; /* Change text color on hover */
+}
+
+header nav ul li a:hover::after {
+    width: 100%; /* Expand the underline to full width on hover */
+}
+
+/* Home Section */
+.home-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.Home-text {
+    flex: 1;
+    font-size: 1.6em;
+    line-height: 1.5;
+    padding-left: 80px;
+    padding-bottom: 40px;
+}
+
+.Home-image {
+    flex: 1;
+    max-width: 700px;
+    height: auto;
+    margin-right: 100px;
+    margin-top: 15px;
+}
+
+/* General Section Style */
+section {
+    margin: 50px 0;
+}
+
+/* note: Projects Section Style */
+
+.projects-section-heading {
+    display: block;
+    margin: 40px;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.project-card-image,
+.form-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}
+#Projects {
+
+    display: flex;
+    flex-wrap: wrap; /* للسماح للكروت بالانتقال إلى الصف التالي إذا لم يكن هناك مساحة */
+    justify-content: center; /* توزيع المسافات بين الكروت */
+    gap: 10px; /* إضافة مسافة بين الكروت */
+}
+.project-card {
+    position: relative;
+    padding: 20px;
+    border: 4px dashed #92E3A9;
+    margin: 15px;
+    max-width: 400px;
+    max-height: 850px;
+    text-align: center;
+}
+
+
+.project-card img {
+    width: 100%; /* اجعل الصورة تأخذ عرض الكرت بالكامل */
+    max-width: 300px; /* الحد الأقصى لعرض الصورة */
+    height: auto; /* اجعل الارتفاع يتناسب مع العرض للحفاظ على النسبة */
+    border-radius: 10px; /* زوايا مستديرة للصورة */
+    object-fit: cover; /* تأكد من أن الصورة تغطي المساحة المحددة بشكل جيد */
+    margin: 60px auto; /* محاذاة الصورة في المنتصف */
+}
+
+
+.project-card-link
+{
+    margin: 20px auto; /* إزالة التكرار */
+    padding: 10px;
+    background-color: var(--color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease; /* تحسين السلاسة */
+}
+
+
+.project-card-link:hover  {
+  
+    background-color: white; /* Change color on hover */
+    border: 1px solid var(--color); /* Add border on hover */
+    
+
+    color: var(--color) ;
+    transform: scale(1.01);
+}
+.project-card-link:active{
+    transform: scale(0.95);
+}
+
+.project-card-button:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+    background-color: white; /* Change color on hover */
+    border: 1px solid var(--color); /* Add border on hover */
+   
+    transform: rotateZ(-5deg);
+}
+
+ 
+/*note: Skills section */
+
+.skills-section-heading {
+    font-size: 2em;
+    text-align: center;
+}
+
+#Skills
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#Skills div
+{
+    width: 240px;
+    height: 80px;
+
+    margin: 20px;
+    border-radius: 10px;
+
+
+    animation: skills-glow-animation 4s infinite ease-in-out;
+}
+
+#Skills div:hover
+{
+    background-color: #92E3A9;
+    color: white;
+    transform: scale(1.05) rotateZ(-5deg); /* دمج القيم */
+    box-shadow: 0 0 10px rgba(146, 227, 169, 0.8), 0 0 20px rgba(146, 227, 169, 0.6);
+}
+
+#Skills div:hover:after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(146, 227, 169, 0.5);
+    opacity: 0.5;
+    border-radius: 10px;
+    transform: scale(1.05);
+    transform: rotateZ(-5deg);
+}
+
+#Skills div:active
+{
+    background-color: #92E3A9;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(146, 227, 169, 0.8), 0 0 20px rgba(146, 227, 169, 0.6);
+    transform: rotateZ(-5deg);
+    animation: skills-glow-animation 4s infinite ease-in-out;
+}
+
+@keyframes skills-glow-animation {
+    
+    0% {
+        box-shadow: 0 0 5px rgba(146, 227, 169, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(146, 227, 169, 0.8), 0 0 30px rgba(146, 227, 169, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(146, 227, 169, 0.5);
+    }
+
+}
+
+#Skills div img
+{
+    padding: 10px 20px;
+    display: inline-block;
+}
+.skills-section-heading
+{
+    position: relative;
+    bottom: 15px;
+}
+#Skills div p
+{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+
+    position: relative;
+    top: -28px;
+   
+}
+
+
+
+
+
+/*note: Form Styling */
+#Contact h2
+{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.form-image
+{
+    
+    display: block; /* تأكد من أن الصورة عنصر block */
+    margin: 0 auto; /* محاذاة الصورة أفقيًا في المنتصف */
+     /* تأكد من أن الصورة لا تتجاوز عرض الحاوية */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
+form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 10px auto;
+}
+label {
+    font-size: 1.2em;
+    color: var(--color);
+    margin-bottom: 5px;
+    }
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid var(--color);
+    border-radius: 5px;
+    outline: none;
+    color: var(--color);
+    font-size: 1em;
+    width: 100%;
+    margin: 0 auto;
+}
+ 
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 1px solid var(--color); /* Change border color on focus */
+    box-shadow: 0 0 5px var(--color); /* Add shadow on focus */
+    transition: all 0.3s ease; /* Smooth transition for input changes */
+}
+
+textarea
+{
+    display: block;
+    max-width: 600px;
+    max-height: 500px;
+
+    min-width: 200px;
+}
+
+
+
+#submit {
+    padding: 10px;
+    background-color: var(--color);
+    color: white;
+    border: solid 1px var(--color);
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: all 0.5s ease; /* Smooth transition for hover effects */
+}
+#submit:hover
+{
+    color : var(--color);
+
+    border: 1px solid var(--color); 
+    background-color: white;
+    transform: rotateZ(5deg); /* إزالة علامات الاقتباس */
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: var(--color);
+    
+    border: 1px solid var(--color);
+
+}
+input[type="submit"]:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+}
+
+
+.about-text-title{
+    margin-left: 80px ;
+
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+
+
+span{
+    color: var(--color);
+}
+
+.social-media-icon
+{
+   
+    transition: all 0.3s ease;
+}
+.social-media-icon:hover
+{
+   transform: scale(1.2);
+   background-color: #92E3A9;
+   color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+ 
+}
+
+
+
+
+
+/*note: Screen media */
+@media screen and (max-width: 1040px) {
+
+    h2
+    {
+        font-size: 1em;
+
+    }
+    .Home-image
+    {
+        width: 400px;
+        height: auto; 
+        
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .Home-text
+    {
+        padding-left: 10px;
+
+    }
+
+    .about-text-title{
+        margin-left: 10px ;
+    
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .home-header
+    {
+        display: none;
+    }
+
+    h2
+    {
+        font-size: 1.2em;
+
+    }                                  f 
+    .Home-image
+    {
+        width: 200px;
+        height: auto; 
+        
+        margin: 0 auto;
+    }
+
+    p{
+        font-size: 20px;
+    }
+    .about-text-title{
+        margin-left: 10px ;
+    
+    }
+    .Home-text
+    {
+        padding-left: 10px;
+
+    }
+    .project-card
+    {
+        height: 700px;
+    }
+
+    .project-card img {
+        width: 100%; /* اجعل الصورة تأخذ عرض الكرت بالكامل */
+        height: auto; /* اجعل الارتفاع يتناسب مع العرض للحفاظ على النسبة */
+        border-radius: 10px; /* زوايا مستديرة للصورة */
+        margin: 20px auto; /* محاذاة الصورة في المنتصف */
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .Home-image
+    {
+        width: 150px;
+        height: auto; 
+        
+        margin: 0 auto;
+    }
+
+}
